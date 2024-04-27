@@ -1,0 +1,7 @@
+site_name: My Docs
+site_url: https://gaoxingxs.github.io
+site_description: 秃头之路
+site_author: gaoxingxs
+theme:
+  name: 'material'
+  language: zh

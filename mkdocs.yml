@@ -9,6 +9,8 @@ nav:
   - JavaScript:
     - VUE:
       - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md
+    - React:
+      - 入门笔记: javascript/react/入门笔记.md
 
 theme:
   name: material

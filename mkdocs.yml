@@ -3,12 +3,21 @@ site_url: https://gaoxingxs.github.io
 site_description: ''
 site_author: gaoxingxs
 edit_uri: tree/main/docs
+
+# Page tree
+nav:
+  - JavaScript:
+    - VUE:
+      - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md
+
 theme:
   name: material
   language: zh
   features:
     - announce.dismiss
-    - content.action.edit
+    # - content.action.edit # 是否显示编辑此页
+    - navigation.tabs # 横向导航
+    # - navigation.tabs.sticky # 横向导航在页面滚动时是否固定
     # - content.action.view
     - content.code.annotate
     - content.code.copy
@@ -20,10 +29,8 @@ theme:
     # - navigation.instant
     # - navigation.prune
     # - navigation.sections
-    # - navigation.tabs
-    # - navigation.tabs.sticky
-    - navigation.top
-    - navigation.footer
+    # - navigation.top
+    # - navigation.footer
     - navigation.tracking
     - search.highlight
     - search.share
@@ -47,16 +54,37 @@ theme:
     text: Noto Sans SC
     code: Fira Code
 
-# Page tree
-nav:
-  - JavaScript:
-    - VUE:
-      - 开发中遇到的问题: 
-  - 第 0 章 &nbsp; 前言:
-    # [icon: material/book-open-outline]
-    - chapter_preface/index.md
-    - 0.1 &nbsp; 关于本书: chapter_preface/about_the_book.md
-    - 0.2 &nbsp; 如何使用本书: chapter_preface/suggestions.md
-    - 0.3 &nbsp; 小结: chapter_preface/summary.md
 extra:
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
+
+markdown_extensions:
+  - admonition  # 提示块
+  - footnotes  # 脚注
+  - meta  # 定义元数据，通过文章上下文控制，如disqus
+  - pymdownx.caret  # 下划线上标
+  - pymdownx.tilde  # 删除线下标
+  - pymdownx.critic  # 增加删除修改高亮注释，可修饰行内或段落
+  - pymdownx.details  # 提示块可折叠
+  - pymdownx.inlinehilite  # 行内代码高亮
+  - pymdownx.mark  # 文本高亮
+  - pymdownx.smartsymbols  # 符号转换
+  - pymdownx.superfences  # 代码嵌套在列表里
+  - codehilite:    # 代码高亮，显示行号
+      guess_lang: false
+      linenums: true
+  - toc:  # 锚点
+      permalink: true
+#  - pymdownx.arithmatex  # 数学公式
+  - pymdownx.betterem:  # 对加粗和斜体更好的检测
+      smart_enable: all
+#  - pymdownx.emoji:  # 表情
+#      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+#  - pymdownx.magiclink  # 自动识别超链接
+  - pymdownx.tasklist:  # 复选框checklist
+      custom_checkbox: true
+
+plugins:
+    - search:
+        lang:
+            - en
+            - ja

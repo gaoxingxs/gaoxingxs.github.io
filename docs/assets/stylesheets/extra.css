@@ -169,6 +169,14 @@ body {
   filter: brightness(0.85) invert(0.05);
 }
 
+.md-typeset img, .md-typeset svg,.md-typeset video {
+  width: 100%;
+  border-radius: 0.3rem;
+  display: block;
+  margin: 0 auto;
+  box-shadow: var(--md-shadow-z2);
+}
+
 /* landing page */
 .header-img-div {
   display: flex;

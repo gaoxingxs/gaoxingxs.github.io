@@ -1,7 +1,62 @@
 site_name: My Docs
 site_url: https://gaoxingxs.github.io
-site_description: 秃头之路
+site_description: ''
 site_author: gaoxingxs
+edit_uri: tree/main/docs
 theme:
-  name: 'material'
+  name: material
   language: zh
+  features:
+    - announce.dismiss
+    - content.action.edit
+    # - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.prune
+    # - navigation.sections
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    - scheme: default
+      primary: white
+      accent: teal
+      toggle:
+        icon: material/theme-light-dark
+        name: 深色模式
+    - scheme: slate
+      primary: black
+      accent: teal
+      toggle:
+        icon: material/theme-light-dark
+        name: 浅色模式
+  font:
+    text: Noto Sans SC
+    code: Fira Code
+
+# Page tree
+nav:
+  - JavaScript:
+    - VUE:
+      - 开发中遇到的问题: 
+  - 第 0 章 &nbsp; 前言:
+    # [icon: material/book-open-outline]
+    - chapter_preface/index.md
+    - 0.1 &nbsp; 关于本书: chapter_preface/about_the_book.md
+    - 0.2 &nbsp; 如何使用本书: chapter_preface/suggestions.md
+    - 0.3 &nbsp; 小结: chapter_preface/summary.md
+extra:
+  generator: false  #删除页脚显示“使用 MkDocs 材料制造”

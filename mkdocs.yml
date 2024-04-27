@@ -14,29 +14,31 @@ nav:
 
 theme:
   name: material
+  # custom_dir: build/overrides
   language: zh
   features:
     - announce.dismiss
     # - content.action.edit # 是否显示编辑此页
-    - navigation.tabs # 横向导航
-    # - navigation.tabs.sticky # 横向导航在页面滚动时是否固定
     # - content.action.view
     - content.code.annotate
     - content.code.copy
     - content.tabs.link
     - content.tooltips
-    # - header.autohide
+    # - header.autohide # 顶部header下滑时自动隐藏
     # - navigation.expand
     - navigation.indexes
-    # - navigation.instant
-    # - navigation.prune
-    # - navigation.sections
-    # - navigation.top
+    - navigation.instant
+    - navigation.prune
+    - navigation.tabs # 横向导航
+    # - navigation.tabs.sticky # 横向导航在页面滚动时是否固定
+    # - navigation.sections  #次级目录在侧边栏中平铺
+    - navigation.top # 返回顶部的按钮 在上滑时出现
     # - navigation.footer
     - navigation.tracking
-    - search.highlight
-    - search.share
-    - search.suggest
+    # - navigation.expand # 打开Tab时左侧目录全部展开
+    - search.highlight  # 搜索出的文章关键词加入高亮
+    # - search.share #搜索分享按钮
+    - search.suggest # 搜索输入一些字母时推荐补全整个单词
     - toc.follow
     # - toc.integrate
   palette:
@@ -58,7 +60,12 @@ theme:
 
 extra:
   generator: false  #删除页脚显示“使用 MkDocs 材料制造”
-
+extra_css:
+  - assets/stylesheets/extra.css
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
 markdown_extensions:
   - admonition  # 提示块
   - footnotes  # 脚注
@@ -90,3 +97,4 @@ plugins:
         lang:
             - en
             - ja
+        separator: '[\s\-\.]'

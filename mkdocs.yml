@@ -6,11 +6,16 @@ edit_uri: tree/main/docs
 
 # Page tree
 nav:
+  - 首页: index.md
+  - Python:
+    - django:
+      - 初始django: python/web/django/初识django.md
   - JavaScript:
-    - VUE:
+    - Vue:
       - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md
     - React:
       - 入门笔记: javascript/react/入门笔记.md
+  
 
 theme:
   name: material

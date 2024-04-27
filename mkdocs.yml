@@ -8,8 +8,13 @@ edit_uri: tree/main/docs
 nav:
   - 首页: index.md
   - Python:
+    - 基础笔记:
+      - 基础1: python/基础笔记/基础1.md
+      - 基础2: python/基础笔记/基础2.md
     - django:
-      - 初始django: python/web/django/初识django.md
+      - 初始django: python/django/初识django.md
+      - admin系统: python/django/自带admin管理系统的使用.md
+      - 在django中发送邮件: python/django/在django中发送邮件.md
   - JavaScript:
     - Vue:
       - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md

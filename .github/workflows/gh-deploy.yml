@@ -1,9 +1,10 @@
-name: Deploy to Github Pages
-  on:
-    push:
-      branches:
-        - master
-        - main
+name: ci
+on:
+  push:
+    branches:
+      - main # 根据实际的分支情况设置
+permissions:
+  contents: write
 jobs:
   deploy:
     runs-on: ubuntu-latest 

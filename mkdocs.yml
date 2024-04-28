@@ -9,7 +9,7 @@ nav:
   - 首页: index.md
   - Python:
     - 基础笔记:
-      - 基础1: python/基础笔记/基础1.md
+      - 0.1 &nbsp; 基础1: python/基础笔记/基础1.md
       - 基础2: python/基础笔记/基础2.md
     - django:
       - 初始django: python/django/初识django.md
@@ -37,8 +37,8 @@ theme:
     # - header.autohide # 顶部header下滑时自动隐藏
     # - navigation.expand
     - navigation.indexes
-    - navigation.instant
-    - navigation.prune
+    # - navigation.instant
+    # - navigation.prune
     - navigation.tabs # 横向导航
     # - navigation.tabs.sticky # 横向导航在页面滚动时是否固定
     # - navigation.sections  #次级目录在侧边栏中平铺
@@ -73,10 +73,19 @@ extra:
 extra_css:
   - assets/stylesheets/extra.css
 extra_javascript:
-  - javascripts/mathjax.js
+  - assets/javascripts/mathjax.js
   - https://polyfill.io/v3/polyfill.min.js?features=es6
   - https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+      baselevel: 2
   - admonition  # 提示块
   - footnotes  # 脚注
   - meta  # 定义元数据，通过文章上下文控制，如disqus
@@ -88,6 +97,8 @@ markdown_extensions:
   - pymdownx.mark  # 文本高亮
   - pymdownx.smartsymbols  # 符号转换
   - pymdownx.superfences  # 代码嵌套在列表里
+  - pymdownx.highlight:
+      anchor_linenums: true
   - codehilite:    # 代码高亮，显示行号
       guess_lang: false
       linenums: true

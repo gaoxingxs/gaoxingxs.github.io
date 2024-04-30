@@ -18,6 +18,7 @@ nav:
   - JavaScript:
     - Vue:
       - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md
+      - vit压缩打包体积: javascript/vue/vit压缩打包体积.md
     - React:
       - 入门笔记: javascript/react/入门笔记.md
   

@@ -4,7 +4,7 @@ site_description: ''
 site_author: gaoxingxs
 edit_uri: tree/main/docs
 
-# Page tree  a
+# Page tree
 nav:
   - 首页: index.md
   - Python:

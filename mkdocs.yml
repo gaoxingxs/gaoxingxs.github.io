@@ -2,7 +2,7 @@ site_name: My Docs
 site_url: https://gaoxingxs.github.io
 site_description: ''
 site_author: gaoxingxs
-edit_uri: tree/main/docs
+edit_uri: https://github.com/gaoxingxs/gaoxingxs.github.io/blob/main/docs/
 
 # Page tree
 nav:
@@ -21,6 +21,9 @@ nav:
       - vit压缩打包体积: javascript/vue/vit压缩打包体积.md
     - React:
       - 入门笔记: javascript/react/入门笔记.md
+  - Middleware:
+    - Git:
+      - 常用命令: middleware/git/常用命令.md
   
 
 theme:

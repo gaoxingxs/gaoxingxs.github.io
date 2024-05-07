@@ -9,7 +9,7 @@ nav:
   - 首页: index.md
   - Python:
     - 基础笔记:
-      - 0.1 &nbsp; 基础1: python/基础笔记/基础1.md
+      - 基础1: python/基础笔记/基础1.md
       - 基础2: python/基础笔记/基础2.md
     - django:
       - 初始django: python/django/初识django.md

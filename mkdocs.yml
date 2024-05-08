@@ -20,6 +20,9 @@ nav:
       - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md
     - React:
       - 入门笔记: javascript/react/入门笔记.md
+  - 算法:
+    - hello-algo:
+      - 学习随笔: 算法/hello-algo.md
   
 
 theme:

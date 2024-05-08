@@ -2,14 +2,14 @@ site_name: My Docs
 site_url: https://gaoxingxs.github.io
 site_description: ''
 site_author: gaoxingxs
-edit_uri: tree/main/docs
+edit_uri: https://github.com/gaoxingxs/gaoxingxs.github.io/blob/main/docs/
 
 # Page tree
 nav:
   - 首页: index.md
   - Python:
     - 基础笔记:
-      - 0.1 &nbsp; 基础1: python/基础笔记/基础1.md
+      - 基础1: python/基础笔记/基础1.md
       - 基础2: python/基础笔记/基础2.md
     - django:
       - 初始django: python/django/初识django.md
@@ -18,11 +18,15 @@ nav:
   - JavaScript:
     - Vue:
       - 开发中遇到的问题: javascript/vue/开发中遇到的问题.md
+      - vit压缩打包体积: javascript/vue/vit压缩打包体积.md
     - React:
       - 入门笔记: javascript/react/入门笔记.md
   - 算法:
     - hello-algo:
       - 学习随笔: 算法/hello-algo.md
+  - Middleware:
+    - Git:
+      - 常用命令: middleware/git/常用命令.md
   
 
 theme:
